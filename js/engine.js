@@ -140,9 +140,8 @@ var Engine = (function(global) {
 
         renderEntities();
 
-        ctx.clearRect(0, 0, canvas.width, 50); // clear previous information
+        ctx.clearRect(0, 0, canvas.width, 60); // clear previous information
         ctx.font = "45px Covered By Your Grace, cursive"; // set font size and family
-        ctx.textAlign = "left"; // set text to be rendered at left
         ctx.fillStyle = "green"; // set colour
         ctx.fillText('score: ' + player.score, 185, 45); //display score
     }
