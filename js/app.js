@@ -31,10 +31,10 @@ Enemy.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
 
-var enemy1 = new Enemy(-300, 220, this.speed)
-var enemy2 = new Enemy(-400, 140, this.speed)
-var enemy3 = new Enemy(140, 50, this.speed)
-var enemy4 = new Enemy(140, 60, this.speed)
+var enemy1 = new Enemy(-300, 220, this.speed);
+var enemy2 = new Enemy(-400, 140, this.speed);
+var enemy3 = new Enemy(140, 50, this.speed);
+var enemy4 = new Enemy(140, 60, this.speed);
 var allEnemies = [enemy1,enemy2, enemy3, enemy4];
 
 
@@ -55,7 +55,7 @@ Player.prototype.update = function () {
 
     }
     
-}
+};
 
 Player.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
@@ -118,7 +118,7 @@ Key.prototype.update = function(dt) {
 
 Key.prototype.render = function() {
   ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
-}
+};
 
 Key.prototype.reset = function(x,y) {
     player.score += 100;
